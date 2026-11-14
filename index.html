@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人履歷 - 羅梓恩</title>
+    <!-- 依講義規範使用 link 外部引入 CSS 樣式檔 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div class="layout-container">
+        <!-- 左側側邊欄導覽列 (<nav>) -->
+        <nav class="sidebar-nav">
+            <div class="nav-logo">
+                <div class="logo-box">CYCU</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#section1">基本資訊</a></li>
+                <li><a href="#section2">專業與技能</a></li>
+                <li><a href="#section3">個人經歷</a></li>
+                <li><a href="#section4">聯絡資訊</a></li>
+            </ul>
+        </nav>
+
+        <!-- 右側主要內容容器 -->
+        <div class="main-content">
+            
+            <!-- 頂部 Header：照片 (<aside>) + 標題區塊 -->
+            <header id="header" class="header-box">
+                <aside class="avatar-aside">
+                    <!-- 圖片像素已縮減，路徑放置於 images/ -->
+                    <img src="images/avatar.jpg" alt="個人大頭照" class="avatar-img">
+                </aside>
+                <div class="header-intro">
+                    <h1>羅梓恩 (LO-TZU-EN)</h1>
+                    <p>中原大學 資訊管理學系 | 個人專業履歷</p>
+                </div>
+            </header>
+
+            <!-- 01 基本資訊 (<section1>) -->
+            <section id="section1" class="resume-section">
+                <h2 class="section-title">01 基本資訊</h2>
+                <div class="info-grid">
+                    <div class="info-list-box">
+                        <ul class="profile-details">
+                            <li><strong>姓名：</strong> 羅梓恩</li>
+                            <li><strong>生日：</strong> 2006-12-25</li>
+                            <li><strong>學歷：</strong> 中原大學 資訊管理學系</li>
+                            <li><strong>興趣：</strong> 網頁開發、藝術手作</li>
+                        </ul>
+                    </div>
+                    <div class="info-bio-box">
+                        <h3>自我介紹</h3>
+                        <p>
+                            具備扎實的資訊管理學術基礎與程式邏輯思維，熟悉 Java 程式設計、資料結構與網路通訊架構。在學期間注重理論與實作整合，樂於探索新技術並具備跨領域的企劃與分析能力。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+           <!-- 02 專業與技能 (<section2>) -->
+<section id="section2" class="resume-section">
+    <h2 class="section-title">02 專業與技能</h2>
+    
+    <!-- 圓形進度條 -->
+    <div class="skills-grid">
+        <!-- 技能 01: Java -->
+        <div class="skill-item">
+            <div class="circle-progress" style="--percent: 85;">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg-ring" cx="50" cy="50" r="40"></circle>
+                    <circle class="bar-ring" cx="50" cy="50" r="40"></circle>
+                </svg>
+                <div class="inner-text">85%</div>
+            </div>
+            <span class="skill-name">Python</span>
+        </div>
+
+        <!-- 技能 02: HTML/CSS -->
+        <div class="skill-item">
+            <div class="circle-progress" style="--percent: 90;">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg-ring" cx="50" cy="50" r="40"></circle>
+                    <circle class="bar-ring" cx="50" cy="50" r="40"></circle>
+                </svg>
+                <div class="inner-text">90%</div>
+            </div>
+            <span class="skill-name">Java</span>
+        </div>
+
+        <!-- 技能 03: 資料結構 -->
+        <div class="skill-item">
+            <div class="circle-progress" style="--percent: 80;">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg-ring" cx="50" cy="50" r="40"></circle>
+                    <circle class="bar-ring" cx="50" cy="50" r="40"></circle>
+                </svg>
+                <div class="inner-text">80%</div>
+            </div>
+            <span class="skill-name">HTML/CSS</span>
+        </div>
+
+        <!-- 技能 04: 企劃撰寫 -->
+        <div class="skill-item">
+            <div class="circle-progress" style="--percent: 75;">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg-ring" cx="50" cy="50" r="40"></circle>
+                    <circle class="bar-ring" cx="50" cy="50" r="40"></circle>
+                </svg>
+                <div class="inner-text">75%</div>
+            </div>
+            <span class="skill-name">資料結構</span>
+        </div>
+
+        <!-- 技能 05: Git / GitHub -->
+        <div class="skill-item">
+            <div class="circle-progress" style="--percent: 70;">
+                <svg viewBox="0 0 100 100">
+                    <circle class="bg-ring" cx="50" cy="50" r="40"></circle>
+                    <circle class="bar-ring" cx="50" cy="50" r="40"></circle>
+                </svg>
+                <div class="inner-text">70%</div>
+            </div>
+            <span class="skill-name">企劃撰寫</span>
+        </div>
+    </div>
+
+    <!-- 語言能力動態長條圖區塊 -->
+    <div class="language-skills">
+        <!-- 英文能力 -->
+        <div class="bar-skill-item">
+            <div class="bar-header">
+                <span class="bar-title">英文 (English)</span>
+                <span class="bar-value">80%</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill english-bar"></div>
+            </div>
+        </div>
+
+        <!-- 日文能力 -->
+        <div class="bar-skill-item">
+            <div class="bar-header">
+                <span class="bar-title">日文 (Japanese)</span>
+                <span class="bar-value">60%</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill japanese-bar"></div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- 03 個人經歷 (<section3>) -->
+            <section id="section3" class="resume-section">
+                <h2 class="section-title">03 個人經歷</h2>
+                <div class="experience-timeline">
+                    
+                    <!-- 經歷 01 (<article1>) -->
+                    <article class="timeline-article">
+                        <div class="timeline-node"></div>
+                        <div class="article-content">
+                            <h3>經歷 01：中原大學資管系專案開發</h3>
+                            <p>參與企業資料通訊與資訊系統雛形開發，運用物件導向觀念完成系統核心架構設計與演算法優化。</p>
+                        </div>
+                        <div class="article-image">
+                            <img src="images/exp1.jpg" alt="經歷照片 1">
+                        </div>
+                    </article>
+
+                    <!-- 經歷 02 (<article2>) -->
+                    <article class="timeline-article">
+                        <div class="timeline-node"></div>
+                        <div class="article-content">
+                            <h3>經歷 02：公益關懷服務與永續企劃</h3>
+                            <p>參與流浪動物志工服務並統籌永續發展目標 (SDGs) 企劃推展，進行專案排程與現場跨協力溝通。</p>
+                        </div>
+                        <div class="article-image">
+                            <img src="images/exp2.jpg" alt="經歷照片 2">
+                        </div>
+                    </article>
+
+                    <!-- 經歷 03 (<article3>) -->
+                        <article class="timeline-article">
+                            <div class="timeline-node"></div>
+                            <div class="article-content">
+                                <h3>經歷 03：基隆社團返鄉服務營隊</h3>
+                                <p>於去年寒假前往基隆參與社團返鄉服務，走入當地國小帶領學童進行營隊活動，負責活動規劃、團隊帶領與現場秩序引導，培養溝通協調與臨場應變能力。</p>
+                            </div>
+                            <div class="article-image">
+                                <img src="images/exp3.jpg" alt="基隆返鄉服務營隊照片">
+                            </div>
+                        </article>
+                </div>
+            </section>
+
+            <!-- 04 聯絡資訊 (<section4>) -->
+            <section id="section4" class="resume-section">
+                <h2 class="section-title">04 聯絡資訊</h2>
+                <div class="contact-grid">
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=joyce951225@gmail.com" target="_blank" class="btn">寫信給我</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📘</div>
+                        <h4>Facebook</h4>
+                        <a href="https://www.facebook.com/luo.zi.en.257162?locale=zh_TW" target="_blank" class="btn">Button</a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📷</div>
+                        <h4>Instagram</h4>
+                        <a href="https://www.instagram.com/joyce._.1225/" target="_blank" class="btn">Button</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 頁尾 (<footer>) -->
+            <footer class="footer-box">
+                <p>&copy; 2026 羅梓恩. All Rights Reserved. Chung Yuan Christian University.</p>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
